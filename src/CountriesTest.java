@@ -200,52 +200,6 @@ public class CountriesTest {
 
     }
 
-    @Test
-    public void getTotal1() {
-
-        String myNum = "5421312341";
-
-
-        int myTotal = c1.getTotal(myNum);
-
-        int expected = 10;
-
-
-        Assert.assertTrue(myTotal == expected);
-
-
-    }
-
-    @Test
-    public void getTotal2() {
-
-        String myNum = "5654656213";
-
-
-        int myTotal = c1.getTotal(myNum);
-
-        int expected = 29;
-
-
-        Assert.assertTrue(myTotal == expected);
-
-
-    }
-
-    @Test
-    public void getTotal3() {
-
-        String myNum = "00000000000";
-
-
-        int myTotal = c1.getTotal(myNum);
-
-        int expected = -1;
-
-
-        Assert.assertTrue(myTotal == expected);
-
-    }
 
     @Test
     public void isfirstArrayListContainssecondArrayList1() {
@@ -418,7 +372,7 @@ public class CountriesTest {
     @Test
     public void smallestNumber1() {
 
-        int i1 = c1.smallestNumber(5, 3, 2);
+        int i1 = c1.smallestNumbers(5, 3, 2);
 
         Assert.assertTrue(i1 == 2);
 
@@ -428,7 +382,7 @@ public class CountriesTest {
     @Test
     public void smallestNumber2() {
 
-        int i1 = c1.smallestNumber(0, 0, 0);
+        int i1 = c1.smallestNumbers(0, 0, 0);
 
         Assert.assertTrue(i1 == 0);
 
@@ -437,7 +391,7 @@ public class CountriesTest {
     @Test
     public void smallestNumber3() {
 
-        int i1 = c1.smallestNumber(10, 12, 10);
+        int i1 = c1.smallestNumbers(10, 12, 10);
 
         Assert.assertTrue(i1 == 10);
 
